@@ -13,5 +13,7 @@ public class Main {
         Matrix sumMatrices = new SumOfTwoMatrices(new TransparentMatrix(new MatrixImpl(mat)), matrixImpl);
         System.out.println(sumMatrices.getElement(1,1));
 
+
+        
     }
 }
