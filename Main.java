@@ -6,7 +6,7 @@ public class Main {
 
         Matrix matrixImpl = new MatrixImpl(mat);
         Matrix transparentMatrix = new TransparentMatrix(new MatrixImpl(mat));
-        Matrix sumMatrices = new SumOfTwoMatrices(new TransparentMatrix(new MatrixImpl(mat)), matrixImpl);
+        Matrix sumMatrices = new SumOfTwoMatrices(new TransparentMatrix(new MatrixImpl(mat)), new MatrixImpl(mat));
 
         System.out.println("## Simple matrix");
         for(int i = 0; i < 3; ++i) {
@@ -16,6 +16,7 @@ public class Main {
             }
             System.out.println("|");
         }
+        
         System.out.println("## Transparent matrix");
         for(int i = 0; i < 3; ++i) {
             System.out.print("|");
@@ -24,6 +25,7 @@ public class Main {
             }
             System.out.println("|");
         }
+
         System.out.println("## Sum of two matrices");
         for(int i = 0; i < 3; ++i) {
             System.out.print("|");
@@ -32,8 +34,5 @@ public class Main {
             }
             System.out.println("|");
         }
-
-
-        
     }
 }
